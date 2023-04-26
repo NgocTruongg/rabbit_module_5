@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    let courses = [
+    {
+        id: 1,
+            title: "ReactJS Tutorial",
+        rating: 4.2,
+    },
+    {
+        id: 2,
+            title: "Angular Tutorial",
+        rating: 2.5,
+    },
+    {
+        id: 3,
+            title: "VueJS Tutorial",
+        rating: 3.8,
+    },
+    {
+        id: 4,
+            title: "Java Tutorial",
+        rating: 4,
+    },
+    {
+        id: 5,
+            title: "JavaScript Tutorial",
+        rating: 3.5,
+    },
+    ];
+
+    let addedCourses = [
+    {
+        id: 6,
+            title: "PHP Tutorial",
+        rating: 3,
+    },
+    {
+        id: 7,
+            title: "C# Tutorial",
+        rating: 2,
+    },
+    {
+        id: 8,
+            title: "Docker Tutorial",
+        rating: 3.8,
+    }
+    ];
+
+
+    // câu 1:
+    const check = courses.filter(function (courses) {
+      return courses.rating >=4;
+    })
+    console.log(check);
+
+
+    // câu 2:
+
+  const checkRating =courses.filter(function (courses) {
+      return courses.rating <4;
+  })
+    console.log(checkRating.map(value => {
+        return value.id + "-" + value.title + "-" + value.rating ;
+    }));
+
+//  câu 3:
+
+    console.log([...addedCourses, ...courses])
+</script>
+</body>
+</html>
