@@ -1,0 +1,43 @@
+.font-nav{
+  font-size: 22px;
+  margin-left: 12px;
+}
+.color-nav{
+  background: darkcyan;
+}
+
+
+.text-small {
+  font-size: 0.9rem;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+.form-control {
+  background: white;
+  border-color: white;
+}
+
+
+footer {
+  background: #545454;
+}
+
+
+:root {
+  --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
+}
+
+body {
+  background: white !important;
+}
+
