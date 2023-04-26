@@ -54,23 +54,17 @@
 
 
     // câu 1:
-    const check = courses.filter(function (courses) {
-      return courses.rating >=4;
-    })
+    const check = courses.filter(courses => courses.rating >=4))
     console.log(check);
 
 
     // câu 2:
 
-  const checkRating =courses.filter(function (courses) {
-      return courses.rating <4;
-  })
-    console.log(checkRating.map(value => {
-        return value.id + "-" + value.title + "-" + value.rating ;
-    }));
+    console.log(courses.filter(courses => courses.rating < 4).map(value => {
+        return value.id + "-" + value.title + "-" + value.rating
+    }))
 
 //  câu 3:
-
     console.log([...addedCourses, ...courses])
 </script>
 </body>
