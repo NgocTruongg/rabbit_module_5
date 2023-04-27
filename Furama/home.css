@@ -24,7 +24,7 @@ a:hover, a:focus {
 
 .form-control {
   background: white;
-  border-color: white;
+  border-color: black;
 }
 
 
@@ -37,7 +37,14 @@ footer {
   --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
 }
 
-body {
-  background: white !important;
+.color-red{
+  color: red;
+}
+.fw-bold-text{
+  font-weight: 700!important;
 }
 
+.test{
+  width: 100%;
+  margin-top: 188px;
+}
