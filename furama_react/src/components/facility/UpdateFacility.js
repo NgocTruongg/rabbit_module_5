@@ -1,6 +1,6 @@
 import {Component} from "react";
 
-export class Update extends Component {
+export class UpdateFacility extends Component {
     render() {
         return (
             <>
