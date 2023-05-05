@@ -1,4 +1,6 @@
-import {customerList} from "./Customer";
+import {customerList, customerType, gender} from "./Customer";
+import React from "react";
+import {type} from "@testing-library/user-event/dist/type";
 
 export function ListCustomer() {
     return (
@@ -29,10 +31,21 @@ export function ListCustomer() {
                                 <td>{customerList.name}</td>
                                 <td>{customerList.dateOfBirth}</td>
                                 <td>{customerList.gender}</td>
+                                <td>
+                                    {
+                                        gender.filter(type => type.id === customerList.gender)[0]?.type
+                                    }
+                                </td>
                                 <td>{customerList.identity}</td>
                                 <td>{customerList.phone}</td>
                                 <td>{customerList.email}</td>
-                                <td>{customerList.customerType}</td>
+                                <td>
+                                    {
+                                        customerType.filter(
+                                            type => type.id === customerList.customerType
+                                        )[0]?.type
+                                    }
+                                </td>
                                 <td>{customerList.address}</td>
                                 <td>
                                     <div className="card-body p-2">
@@ -40,7 +53,7 @@ export function ListCustomer() {
                                             type="button"
                                             className="btn btn-danger"
                                             data-bs-toggle="modal"
-                                            data-bs-target="#deleteCustomer"
+                                            data-bs-target="#deleteCustomers"
                                         >
                                             Delete
                                         </button>
