@@ -1,23 +1,33 @@
-import * as Yup from 'yup';
-import {toast, ToastContainer} from "react-toastify";
-import {Vortex} from 'react-loader-spinner';
-import 'react-toastify/dist/ReactToastify.css';
+import * as Yup from "yup";
 import {ErrorMessage, Field, Form, Formik} from "formik";
-import {Footer} from "../Footer";
 import {Navbar} from "../Navbar";
+import {Footer} from "../Footer";
+import {toast, ToastContainer} from "react-toastify";
+import {Vortex} from "react-loader-spinner";
 import React from "react";
 
-export function CreateCustomer() {
-    // const [customerTypes, setCustomerType] = useState([])
-    // const [genders, setGenders] = useState([])
+export function EditCustomer() {
+    // const [customerData, setCustomerData] = useState();
+    // const [genders, setGenders] = useState([]);
+    // const [customerTypes, setCustomerTypes] = useState([]);
+    // const param = useParams();
     // useEffect(() => {
-    //     const list = async () => {
-    //         setCustomerType(await findAllCustomerType())
+    //     const data = async () => {
+    //         setCustomerData(await findCustomerById(param.id));
+    //     }
+    //     data()
+    // }, [param.id]);
+    //
+    // useEffect(() => {
+    //     const data = async () => {
+    //         setCustomerTypes(await findAllCustomerType())
     //         setGenders(await findAllGender())
     //     }
-    //     list()
-    // }, [])
-
+    //     data()
+    // })
+    // if (!customerData) {
+    //     return null;
+    // }
     return (
         <>
             <Navbar/>
@@ -52,14 +62,14 @@ export function CreateCustomer() {
                                 /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
                                 "Email phải đúng định dạng. Ví dụ: abc123@xyz.com"
                             ),
-                        dateOfBirth: Yup.string().required("Không được để trống"),
+                        dayOfBirth: Yup.string().required("Không được để trống"),
                         address: Yup.string().required("Không được để trống")
                     })}
                     onSubmit={(values, {setSubmitting}) => {
                         setTimeout(() => {
                             console.log(values);
                             setSubmitting(false);
-                            toast.success(`Tạo ${values.name} thành công `, {
+                            toast.success(`Chỉnh sửa ${values.name} thành công `, {
                                 position: "top-right",
                                 autoClose: 1000,
                                 hideProgressBar: false,
@@ -81,7 +91,7 @@ export function CreateCustomer() {
                                         className="main d-flex justify-content-center align-items-center flex-column mt-5">
                                         <Form className="fw-bold-text " style={{width: "60%"}}>
                                             <div>
-                                                <h1>Add New Customer</h1>
+                                                <h1>Update Customer</h1>
                                             </div>
                                             <label>
                                                 <label className="color-red"> *</label> The name of the customer:
@@ -181,7 +191,7 @@ export function CreateCustomer() {
                                                         className="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
                                                         type="submit"
                                                     >
-                                                        ADD
+                                                        Save
                                                     </button>
                                                 </div>
                                             }

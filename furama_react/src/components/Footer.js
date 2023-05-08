@@ -5,7 +5,7 @@ export class Footer extends Component {
         return (
             <>
                 <footer className="w-100 py-4 flex-shrink-0">
-                    <div className="container py-4">
+                    <div className="container">
                         <div className="row gy-4 gx-5">
                             <div className="col-lg-4 col-md-6">
                                 <h5 className="text-white">Hướng dẫn chuyến đi.</h5>

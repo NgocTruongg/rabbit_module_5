@@ -7,6 +7,10 @@ import React from "react";
     import {CreateFacility} from "./components/facility/CreateFacility";
     import {ListFacility} from "./components/facility/ListFacility";
     import {ListCustomer} from "./components/customer/ListCustomer";
+    import {CreateCustomer} from "./components/customer/CreateCustomer";
+    import {EditCustomer} from "./components/customer/EditCustomer";
+    import {UpdateFacility} from "./components/facility/UpdateFacility";
+    import {CreateContract} from "./components/contact/CreateContract";
 
 function App() {
   return (
@@ -15,8 +19,13 @@ function App() {
      {/*<Header/>*/}
      {/*<Footer/>*/}
     {/*<ListContact/>*/}
-    <ListFacility/>
+    {/*<ListFacility/>*/}
     {/*<ListCustomer/>*/}
+    {/*<EditCustomer/>*/}
+    {/*<CreateCustomer/>*/}
+    {/*<CreateFacility/>*/}
+    {/*<UpdateFacility/>*/}
+    <CreateContract/>
     </div>
   );
 }

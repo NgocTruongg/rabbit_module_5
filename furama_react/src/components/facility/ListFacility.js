@@ -1,6 +1,5 @@
 import React from "react";
 import {facilityMap, rental} from "./Facility";
-import {type} from "@testing-library/user-event/dist/type";
 
 export function ListFacility() {
 
