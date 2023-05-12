@@ -9,14 +9,15 @@ export function CreateContract() {
     return (
         <>
             <Formik initialValues={{
-                contractCode: '',
+                contactId: '',
+                contactCode:'',
                 startDate: '',
                 completionDate: '',
                 advancePayment: '',
                 remainingPayment: '',
             }}
                     validationSchema={Yup.object({
-                        contractCode: Yup.string()
+                        contactCode: Yup.string()
                             .required('Tên không được để trống, vui lòng nhập tên')
                             .matches(/\D+/, 'Tên phải đúng theo định dạng không có số'),
                         startDate: Yup.string()
@@ -65,9 +66,9 @@ export function CreateContract() {
                                                     <label className="color-red"> *</label> Code contracts:
                                                 </label>
                                                 <Field type="text" className="form-control" placeholder="HD-001"
-                                                       name="contractCode"/>
+                                                       name="contactCode"/>
                                                 <br/>
-                                                <ErrorMessage name="contractCode" component="div"
+                                                <ErrorMessage name="contactCode" component="div"
                                                               className="message-err"/>
                                                 <br/>
 

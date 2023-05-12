@@ -16,8 +16,8 @@ export function CreateFacility() {
                 area: '',
                 price: '',
                 maxPersons: '',
-                rentalType: '',
-                roomStandard: '',
+                rental: '',
+                typeRoom: '',
                 description: '',
                 poolArea: '',
                 floor: '',
@@ -112,7 +112,7 @@ export function CreateFacility() {
                                                     as="select"
                                                     aria-label="Default select example"
                                                     className="form-select"
-                                                    name="roomStandard"
+                                                    name="rental"
                                                     style={{height: 50, marginBottom: 30}}
                                                     onChange={(e) => {
                                                         setTypeFacility(e.target.value)
@@ -132,7 +132,7 @@ export function CreateFacility() {
                                                     as="select"
                                                     aria-label="Default select example"
                                                     className="form-select"
-                                                    name="typeFacility"
+                                                    name="typeRoom"
                                                     style={{height: 50, marginBottom: 30}}
                                                     onChange={(e) => {
                                                         setTypeFacility(e.target.value)

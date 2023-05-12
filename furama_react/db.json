@@ -1,21 +1,21 @@
 {
-  "customers" : [
+  "customers": [
     {
       "id": 1,
-      "name": "Ngô Ngọc Trường",
-      "dateOfBirth": "08/06/1998",
-      "gender": 1,
+      "name": "Văn Minhg",
+      "dateOfBirth": "06-08-1998",
+      "gender": 3,
       "identity": "193827312",
       "phone": "0378730129",
       "email": "ngongoctruong1111ts@gmail.com",
-      "customerType": 2,
+      "customerType": 1,
       "address": "Đà Nẵng"
     },
     {
       "id": 2,
-      "name": "Ngô Ngọc Trường",
+      "name": "Văn Đồng",
       "dateOfBirth": "08/06/1998",
-      "gender": 1,
+      "gender": 3,
       "identity": "193827312",
       "phone": "0378730129",
       "email": "ngongoctruong1111ts@gmail.com",
@@ -24,51 +24,40 @@
     },
     {
       "id": 3,
-      "name": "Ngô Ngọc Trường",
-      "dateOfBirth": "08/06/1998",
-      "gender": 1,
+      "name": "Ngọc Trường",
+      "dateOfBirth": "06-08-1998",
+      "gender": 3,
       "identity": "193827312",
       "phone": "0378730129",
       "email": "ngongoctruong1111ts@gmail.com",
-      "customerType": 3,
+      "customerType": 1,
       "address": "Đà Nẵng"
     },
     {
       "id": 4,
-      "name": "Ngô Ngọc Trường",
+      "name": "Như Quỳnh",
       "dateOfBirth": "08/06/1998",
-      "gender": 1,
+      "gender": 3,
       "identity": "193827312",
       "phone": "0378730129",
       "email": "ngongoctruong1111ts@gmail.com",
-      "customerType": 4,
+      "customerType": 1,
       "address": "Đà Nẵng"
     },
     {
       "id": 5,
-      "name": "Ngô Ngọc Trường",
+      "name": "Anh Quốc",
       "dateOfBirth": "08/06/1998",
-      "gender": 2,
+      "gender": 3,
       "identity": "193827312",
       "phone": "0378730129",
       "email": "ngongoctruong1111ts@gmail.com",
-      "customerType": 5,
+      "customerType": 1,
       "address": "Đà Nẵng"
     },
     {
       "id": 6,
-      "name": "Ngô Ngọc Trường",
-      "dateOfBirth": "08/06/1998",
-      "gender": 2,
-      "identity": "193827312",
-      "phone": "0378730129",
-      "email": "ngongoctruong1111ts@gmail.com",
-      "customerType": 2,
-      "address": "Đà Nẵng"
-    },
-    {
-      "id": 7,
-      "name": "Ngô Ngọc Trường",
+      "name": "Phát Đạt",
       "dateOfBirth": "08/06/1998",
       "gender": 3,
       "identity": "193827312",
@@ -91,7 +80,7 @@
       "id": 3,
       "gender": "Khác"
     }
-    ],
+  ],
   "customerTypes": [
     {
       "id": 1,
@@ -112,6 +101,136 @@
     {
       "id": 5,
       "customerType": "Member"
+    }
+  ],
+  "contact": [
+    {
+      "id": 1,
+      "contactCode": "HD-001",
+      "startDate": "02/04/2020",
+      "completionDate": "02/04/2020",
+      "advancePayment": "400",
+      "remainingPayment": "1000"
+    },
+    {
+      "id": 2,
+      "contactCode": "HD-002",
+      "startDate": "02/04/2020",
+      "completionDate": "02/04/2020",
+      "advancePayment": "400",
+      "remainingPayment": "1000"
+    },
+    {
+      "id": 3,
+      "contactCode": "HD-003",
+      "startDate": "02/04/2020",
+      "completionDate": "02/04/2020",
+      "advancePayment": "400",
+      "remainingPayment": "1000"
+    },
+    {
+      "id": 4,
+      "contactCode": "HD-004",
+      "startDate": "02/04/2020",
+      "completionDate": "02/04/2020",
+      "advancePayment": "400",
+      "remainingPayment": "1000"
+    },
+    {
+      "id": 5,
+      "contactCode": "HD-005",
+      "startDate": "02/04/2020",
+      "completionDate": "02/04/2020",
+      "advancePayment": "400",
+      "remainingPayment": "1000"
+    }
+  ],
+  "facility": [
+    {
+      "id": 2,
+      "name": "OCEAN SUITE",
+      "area": 85,
+      "price": "1000",
+      "maxPersons": "10",
+      "rental": 1,
+      "typeRoom": 1
+    },
+    {
+      "id": 3,
+      "name": "OCEAN SUIT",
+      "area": 85,
+      "price": "1000",
+      "maxPersons": "10",
+      "rental": 3,
+      "typeRoom": 1
+    },
+    {
+      "id": 4,
+      "name": "OCEAN SUITE",
+      "area": 85,
+      "price": "1000",
+      "maxPersons": "10",
+      "rental": 1,
+      "typeRoom": 1
+    },
+    {
+      "id": 5,
+      "name": "OCEAN SUITE",
+      "area": "85.8 m2",
+      "price": "1000",
+      "maxPersons": "10",
+      "rental": 4,
+      "typeRoom": 1
+    },
+    {
+      "id": 6,
+      "name": "OCEAN SUITE",
+      "area": "85.8 m2",
+      "price": "1000",
+      "maxPersons": "10",
+      "rental": 1,
+      "typeRoom": 1
+    },
+    {
+      "id": 7,
+      "name": "OCEAN SUITE",
+      "area": 85,
+      "price": "1000",
+      "maxPersons": "10",
+      "rental": 2,
+      "typeRoom": 2
+    }
+  ],
+  "rentals": [
+    {
+      "id": 1,
+      "type": "Thuê theo giờ"
+    },
+    {
+      "id": 2,
+      "type": "Thuê theo ngày"
+    },
+    {
+      "id": 3,
+      "type": "Thuê theo tháng"
+    },
+    {
+      "id": 4,
+      "type": "Thuê theo năm"
+    }
+  ],
+  "typeRooms": [
+    {
+      "id": 1,
+      "name": "Villa"
+    },
+    {
+      "id": 2,
+      "name": "House"
+    },
+    {
+      "id": 3,
+      "name": "Room"
     }
   ]
 }

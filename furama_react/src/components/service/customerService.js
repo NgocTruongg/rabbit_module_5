@@ -52,7 +52,7 @@ export const deleteCustomer = async (id) =>{
 }
 export const findCustomerById = async (id) =>{
     try {
-        const result = await  axios.get(`http://localhost:8080/customer/${id}`)
+        const result = await  axios.get(`http://localhost:8080/customers/${id}`)
         return result.data
     } catch (error) {
         console.log(error)
