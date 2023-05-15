@@ -39,9 +39,9 @@ export default function ContactForm() {
                         <Form>
                             <div className="title">Contact Form</div>
                             <div className="input-container ic1">
-                                <Field id="firstname" className="input" type="text" placeholder=" " name="firstName"/>
+                                <Field id="firstName" className="input" type="text" placeholder=" " name="firstName"/>
                                 <div className="cut"></div>
-                                <label htmlFor="firstname" className="placeholder">First name</label>
+                                <label htmlFor="firstName" className="placeholder">First name</label>
                                 <ErrorMessage name="firstName" component="div" className="message-err"/>
 
                             </div>

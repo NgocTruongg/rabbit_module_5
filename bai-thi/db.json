@@ -1,0 +1,59 @@
+{
+  "student": [
+    {
+      "id": 2,
+      "name": "Son",
+      "gender": 1,
+      "className": 3
+    },
+    {
+      "id": 4,
+      "name": "Quynh",
+      "gender": 3,
+      "className": 1
+    },
+    {
+      "id": 5,
+      "name": "Y",
+      "gender": 3,
+      "className": 2
+    },
+    {
+      "id": 6,
+      "name": "Den",
+      "gender": 2,
+      "className": 3
+    }
+  ],
+
+
+  "className": [
+    {
+      "id": 1,
+      "name": "c1022g1"
+    },
+    {
+      "id": 2,
+      "name": "c1122g1"
+    },
+    {
+      "id": 3,
+      "name": "c1222g1"
+    }
+  ],
+
+  "gender": [
+    {
+      "id": 1,
+      "name": "nam"
+    },
+    {
+      "id": 2,
+      "name": "nu"
+    },
+    {
+      "id": 3,
+      "name": "khac"
+    }
+  ]
+}

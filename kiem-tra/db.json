@@ -1,0 +1,46 @@
+{
+  "product": [
+    {
+      "id": 4,
+      "code": "H-004",
+      "name": "áo polo",
+      "date": "15/02/2023",
+      "amount": "10",
+      "type": 2
+    },
+    {
+      "id": 5,
+      "name": "áo sơ mi",
+      "code": "H-005",
+      "date": "15/02/2023",
+      "amount": "10",
+      "type": 2
+    },
+    {
+      "id": 6,
+      "code": "H-0065",
+      "name": "áo sơ mi",
+      "date": "15/02/2023",
+      "amount": "5",
+      "type": 1
+    },
+    {
+      "code": "abc",
+      "name": "12",
+      "date": "30/03/2022",
+      "amount": 23,
+      "type": null,
+      "id": 7
+    }
+  ],
+  "type": [
+    {
+      "id": 1,
+      "name": "nam"
+    },
+    {
+      "id": 2,
+      "name": "nữ"
+    }
+  ]
+}

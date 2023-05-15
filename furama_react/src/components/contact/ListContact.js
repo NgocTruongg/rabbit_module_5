@@ -73,9 +73,7 @@ export function ListContact() {
                                     <td>{contact.remainingPayment}</td>
                                     <td>
                                         <div className="card-body p-2">
-                                            <Link to={`/editContact/${contact.contactId}`} className="btn btn-primary">
-                                                <i className="bi bi-pencil-square"/>
-                                            </Link>
+
                                         </div>
                                     </td>
                                     <td>
