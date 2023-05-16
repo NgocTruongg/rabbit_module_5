@@ -18,7 +18,7 @@ export function UpdateProduct() {
     useEffect(() => {
         const data = async () => {
             let result = await productService.findByIdProduct(param.id)
-            console.log((result.data))
+            // console.log((result.data))
             setProductData(result)
 
         }
@@ -46,7 +46,7 @@ export function UpdateProduct() {
                     name: productData?.name,
                     date: productData?.date,
                     amount: productData?.amount,
-                    type: productData?.type
+                    typeProductDTO: productData?.typeProductDTO.id
                 }}
 
                 validationSchema={Yup.object({

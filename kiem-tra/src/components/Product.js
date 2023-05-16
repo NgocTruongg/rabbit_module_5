@@ -2,30 +2,20 @@ import React, {useEffect, useState} from "react";
 import * as productService from "../service/productService";
 import {Navbar} from "../home/Navbar";
 import {Link} from "react-router-dom";
+import {Formik} from "formik";
 
 
 export function Product() {
 
     const [products, setProducts] = useState([])
-    // const [types, setTypes] = useState([])
     const [productData, setProductData] = useState()
+    const [pageCount, setPageCount] = useState(0)
+    const [filters, setFilers] = useState({page:0, name:"", type:""});
 
     const getData = async (id) => {
         const data = await productService.findByIdProduct(id)
         setProductData(data)
     };
-
-
-    useEffect(() => {
-        const fetchApi = async () => {
-            const result = await productService.findAllProduct()
-            // const data = await productService.findAllType()
-            console.log(result)
-            setProducts(result.content)
-            // setTypes(data)
-        }
-        fetchApi()
-    }, [])
 
     const handleDelete = async () => {
         await productService.removeProduct(productData.id)
@@ -34,13 +24,34 @@ export function Product() {
         alert("xóa thành công")
     }
 
+    const handlePageClick =(event) =>{
+        setFilers((pev)=>({...pev, page: event.select}));
+    };
 
-    // if (!products) {
-    //     return null
-    // }
-    console.log(products)
+
+    useEffect(() => {
+        const getProduct = async () => {
+            const result = await productService.findAllProduct()
+            console.log(result)
+            setProducts(result.content)
+        }
+        getProduct()
+    }, [])
+
     return (
         <>
+            <Formik
+                initialValues={{
+                    name: filters.name,
+                    type: filters.type,
+                }}
+                onSubmit={(values) => {
+                    setFilers((prev) => {
+                        return { ...prev, ...values, page: 0 };
+                    });
+                }}
+            >
+            </Formik>
             <div className="main">
                 <div className="container">
                     <div className="row">

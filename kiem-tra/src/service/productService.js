@@ -55,12 +55,3 @@ export const removeProduct=async (id)=>{
         console.log(e)
     }
 }
-
-export const sortByName = async ()=>{
-    try {
-        const result=await axios.get(`http://localhost:8080/product?_sort=name`)
-        return result.data
-    }catch (e) {
-        console.log(e)
-    }
-}
